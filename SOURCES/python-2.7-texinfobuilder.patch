@@ -1,0 +1,23 @@
+diff --git a/Doc/conf.py b/Doc/conf.py
+index 14bb641..a8990a9 100644
+--- a/Doc/conf.py
++++ b/Doc/conf.py
+@@ -135,6 +135,18 @@ latex_documents.extend(('howto/' + fn[:-4], 'howto-' + fn[:-4] + '.tex',
+ # Documents to append as an appendix to all manuals.
+ latex_appendices = ['glossary', 'about', 'license', 'copyright']
+ 
++# Options for Texinfo output
++# --------------------------
++
++texinfo_documents = [
++    ('contents', 'python', 'Python Documentation', _stdauthor,
++     'Python', 'Python Documentation', 'Software Development'),
++]
++
++texinfo_show_urls = [
++    'footnote',
++]
++
+ # Options for Epub output
+ # -----------------------
+ 
